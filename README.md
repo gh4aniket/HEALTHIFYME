@@ -1,60 +1,243 @@
-# MacroZone - React Native Crash Course
+<div align="center">
 
-A macro tracking app built with React Native and Expo as part of the [React Native Crash Course](https://youtu.be/XCifkDC0yXA) on YouTube by Traversy Media. Track your daily meals and monitor your macros (calories, protein, carbs, fat) with a clean, modern UI.
+# 🥗 HEALTHIFYME
 
-> **📝 Following along with the course?** Check out the [STEPS.md](STEPS.md) file for the complete step-by-step guide with all the code for each section. The drawing from the video is also in this repo.
+A modern cross-platform nutrition tracking application built with **React Native**, **Expo**, **TypeScript**, and **AsyncStorage** to help users monitor their daily calorie and macronutrient intake through an intuitive and responsive interface.
 
-<p align="center">
-  <img src="assets/screen.png" alt="MacroZone App" width="300" />
-</p>
+<br/>
 
-## Features
+<img src="https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React Native"/>
+<img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/AsyncStorage-FFCA28?style=for-the-badge" alt="AsyncStorage"/>
 
-- Add meals with calorie and macro information
-- Track daily totals for calories, protein, carbs, and fat
-- View all meals or recent meals on the home screen
-- Share and copy meal data
-- Haptic feedback for interactions
-- Daily reminder notifications (iOS)
-- Data persistence with AsyncStorage
-- Tab-based navigation with a modern UI
+</div>
 
-## Tech Stack
+---
 
-- [React Native](https://reactnative.dev/) with [Expo](https://expo.dev/) (SDK 55)
-- [Expo Router](https://docs.expo.dev/router/introduction/) (file-based routing)
-- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/) for local data persistence
-- [Expo Notifications](https://docs.expo.dev/versions/latest/sdk/notifications/) for reminders
-- [Expo Haptics](https://docs.expo.dev/versions/latest/sdk/haptics/) for tactile feedback
+# 📋 Table of Contents
+
+- [Introduction](#-introduction)
+- [Screenshots](#-screenshots)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Running the Project](#-running-the-project)
+- [Future Enhancements](#-future-enhancements)
+
+---
+
+# 🤖 Introduction
+
+**HEALTHIFYME** is a cross-platform nutrition tracking application that enables users to log meals, monitor daily calorie and macronutrient intake, and manage their dietary habits through a clean, intuitive interface.
+
+Built with **React Native**, **Expo**, and **TypeScript**, the application offers persistent local storage using **AsyncStorage**, smooth navigation with **Expo Router**, and a responsive mobile-first design for Android and iOS devices.
+
+---
+
+# 📱 Screenshots
+
+<table align="center">
+<tr>
+
+<td align="center">
+<b>🏠 Home</b><br/><br/>
+<img src="assets/images/home.jpeg" alt="Home Screen" width="180"/>
+</td>
+
+<td align="center">
+<b>➕ Add Meal</b><br/><br/>
+<img src="assets/images/add-meal.jpeg" alt="Add Meal Screen" width="180"/>
+</td>
+
+<td align="center">
+<b>📋 All Meals</b><br/><br/>
+<img src="assets/images/all-meals.jpeg" alt="All Meals Screen" width="180"/>
+</td>
+
+<td align="center">
+<b>📤 Share Info</b><br/><br/>
+<img src="assets/images/share.jpeg" alt="Share Meal Data" width="180"/>
+</td>
+
+<td align="center">
+<b>📋 Copy Info</b><br/><br/>
+<img src="assets/images/copy.jpeg" alt="Copy Meal Data" width="180"/>
+</td>
+
+</tr>
+</table>
+
+---
+
+# 🔥 Features
+
+### 🥗 Meal Tracking
+
+Log daily meals with detailed nutritional information, including calories, protein, carbohydrates, and fat.
+
+---
+
+### 📊 Daily Nutrition Dashboard
+
+Track total daily intake of:
+
+- Calories
+- Protein
+- Carbohydrates
+- Fat
+
+---
+
+### 📋 Meal History
+
+Browse all recorded meals or quickly view recently added meals from the home screen.
+
+---
+
+### 📤 Share Nutrition Data
+
+Share your meal summaries with others directly from the application.
+
+---
+
+### 📋 Copy Meal Information
+
+Copy meal details instantly for quick sharing or note-taking.
+
+---
+
+### 💾 Persistent Local Storage
+
+Store all meal records locally using AsyncStorage so data remains available across application restarts.
+
+---
+
+### 📱 Cross-Platform Support
+
+Built with React Native and Expo for seamless performance on Android and iOS.
+
+---
+
+### 🎨 Modern Mobile UI
+
+- Clean Interface
+- Responsive Layout
+- Smooth Navigation
+- Mobile-First Design
+- Intuitive User Experience
+
+---
+
+### ⚡ Fast Navigation
+
+Powered by Expo Router for smooth screen transitions and file-based routing.
+
+---
+
+### 🔔 Smart Notifications
+
+Supports reminder notifications to help users stay consistent with meal tracking.
+
+---
+
+### 📳 Haptic Feedback
+
+Provides tactile feedback during user interactions for an improved mobile experience.
+
+---
+
+### 🏗️ Scalable Architecture
+
+Designed with:
+
+- Reusable Components
+- TypeScript Interfaces
+- Utility Functions
+- Organized Folder Structure
+- Modular Architecture
+
+---
+
+# ⚙️ Tech Stack
+
+- React Native
+- Expo
+- Expo Router
 - TypeScript
+- AsyncStorage
+- Expo Notifications
+- Expo Haptics
 
-## Getting Started
+---
 
-### Prerequisites
+# 🚀 Installation
 
-- [Node.js](https://nodejs.org/) (LTS)
-- [Expo Go](https://expo.dev/go) app on your phone, or an Android/iOS emulator
-
-### Installation
+Clone the repository.
 
 ```bash
-git clone https://github.com/bradtraversy/macrozone.git
-cd macrozone
+git clone https://github.com/<your-github-username>/healthifyme.git
+
+cd healthifyme
+```
+
+Install dependencies.
+
+```bash
 npm install
 ```
 
-### Run the App
+or
+
+```bash
+yarn
+```
+
+---
+
+# ▶️ Running the Project
+
+Start the Expo development server.
 
 ```bash
 npx expo start
 ```
 
-Scan the QR code with Expo Go (Android) or the Camera app (iOS) to run on your device.
+Run on Android.
 
-## Course Steps
+```bash
+npx expo run:android
+```
 
-The full step-by-step guide with all the code for the crash course is available in the [STEPS.md](STEPS.md) file.
+Run on iOS.
 
-## License
+```bash
+npx expo run:ios
+```
 
-MIT
+Or scan the QR code using **Expo Go** on your mobile device.
+
+---
+
+# 🚀 Future Enhancements
+
+- ☁️ Cloud Synchronization
+- 👤 User Authentication
+- 📅 Weekly & Monthly Reports
+- 📈 Nutrition Analytics
+- 🎯 Personalized Diet Goals
+- 🥤 Water Intake Tracker
+- 🥦 Food Barcode Scanner
+- 🌙 Light & Dark Theme
+- 🍽️ Meal Categories
+- 🤖 AI-Based Diet Recommendations
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a star!
+
+Made with ❤️ using **React Native**, **Expo**, **TypeScript**, and **AsyncStorage**.
+
+</div>
